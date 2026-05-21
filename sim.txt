@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Você quer sair comigo?</h2>
+    <button onclick="resposta()">Sim</button>
+    <button onmouseover="fuga(this)">Não</button>
+
+    <script>
+        function resposta() {
+            alert("Resposta confirmada por: [Nome 1] e [Nome 2]!");
+        }
+        function fuga(btn) {
+            btn.style.position = 'absolute';
+            btn.style.top = Math.random() * 90 + '%';
+            btn.style.left = Math.random() * 90 + '%';
+        }
+    </script>
+</body>
+</html>
